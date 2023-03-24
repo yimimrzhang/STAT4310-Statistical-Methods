@@ -7,4 +7,3 @@ citype="sigma"
 nsamp <- 100
 numcapture <- cicapture(n,mu,sigma,CC,citype,nsamp)
 print(numcapture)
-
