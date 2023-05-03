@@ -12,6 +12,14 @@ prop.test(230,1500,p=0.5,             # One-sample z-test for a proportion
           alternative="greater",      #  p: hypothesized proportion
           correct=FALSE)              #  correct=TRUE for small sample correction 
 
+# Test or CI for comparing two proportions - class example
+x <- c(99, 62)                        # Number of successes in each group
+n <- c(310, 309)                      # Total number of trials in each group
+prop.test(x,n,                        # Perform the test
+          alternative="greater",
+          correct=FALSE)
+prop.test(x,n, conf.level = 0.95, correct=FALSE)  # Construct CI 
+
 
 
 # Additional Problem 1
